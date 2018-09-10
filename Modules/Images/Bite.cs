@@ -51,7 +51,7 @@ namespace Yazawa_Nico.Modules.Images
                         allUsers = String.Join(" & ", usrs);
                     }
 
-                    message = $" **{Context.User.Username}**is biting {allUsers}! Ouch >~<";
+                    message = $" **{Context.User.Username}** is biting {allUsers}! Ouch >~<";
                 }
                 else
                 {
