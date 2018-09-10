@@ -1,0 +1,9 @@
+# temp folder
+/obj
+
+# biulds
+/bin
+
+# misc
+/.vscode
+.DS_Store
