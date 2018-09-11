@@ -52,5 +52,51 @@ namespace Yazawa_Nico.Modules.Moderation
 
             await Context.Channel.SendMessageAsync($":white_check_mark:  Greet message has been set to `{message}`");
         }
+
+        // Enable Greet Module
+        [Command("enable")]
+        [RequireUserPermission(GuildPermission.Administrator)]
+        [RequireBotPermission(GuildPermission.SendMessages)]
+        public async Task GreetEnable()
+        {
+            // Create a target of type SocketGuild so we can retreive information from the GuildProfiles
+            SocketGuild target = null;
+            target = Context.Guild;
+            var guildProfile = GuildProfiles.GetAccount(target); // Guild Profile
+
+            if (!guildProfile.GreetModule)
+            {
+                guildProfile.GreetModule = true;
+                await Context.Channel.SendMessageAsync(":white_check_mark: Greet Module has been enabled.");
+            }
+            else
+            {
+                await Context.Channel.SendMessageAsync(":white_check_mark: Greet Module has already been enabled.");
+            }
+            GuildProfiles.SaveProfiles();
+        }
+
+        // Disable Greet Module
+        [Command("disable")]
+        [RequireUserPermission(GuildPermission.Administrator)]
+        [RequireBotPermission(GuildPermission.SendMessages)]
+        public async Task GreetDisable()
+        {
+            // Create a target of type SocketGuild so we can retreive information from the GuildProfiles
+            SocketGuild target = null;
+            target = Context.Guild;
+            var guildProfile = GuildProfiles.GetAccount(target); // Guild Profile
+
+            if (guildProfile.GreetModule)
+            {
+                guildProfile.GreetModule = false;
+                await Context.Channel.SendMessageAsync(":white_check_mark: Greet Module has been disabled.");
+            }
+            else
+            {
+                await Context.Channel.SendMessageAsync(":white_check_mark: Greet Module has already been disabled.");
+            }
+            GuildProfiles.SaveProfiles();
+        }
     }
 }

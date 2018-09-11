@@ -65,7 +65,7 @@ namespace Yazawa_Nico.Modules.Utils
             embed.AddField("Currency", "`daily`, `profile`, `send`");
             embed.AddField("Fun", "`choose`, `cucumber`, `give`, `marry`, `notice`, `rip`, `say`, `senpai` `wisdom`");
             embed.AddField("Games", "`8ball`, `rps`");
-            embed.AddField("Moderation", "`ban`, `kick`, `purge`, `purgeu` `greetmsg`, `leavemsg`. `greetmsg settext`, `greetmsg setchannel`, `leavemsg settext`, `leavemsg setchannel`, `greet enable/disable`, `leave enable/diable`, `ban enable/disable`, `kcik enable/disable`, `warn enable/disable`, `levelmsg enable`, `levelmsg disable`, `setprefix`");
+            embed.AddField("Moderation", "`ban`, `ban disable`, `ban enable`, `greetmsg disable`, `greetmsg enable`, `greetmsg setchannel`, `greetmsg settext`, `kick`, `kick disable`, `kick enable`, `leavemsg disable`, `leavemsg enable`, `leavemsg setchannel`, `leavemsg settext`, `levelmsg disable`, `levelmsg enable`, `purge`, `purgeu`, `setprefix`, `warn`, `warn disable`, `warn enable`");
             embed.AddField("Info", "`afk`, `avatar`, `botinfo`, `userinfo`, `serverinfo`");
             embed.AddField("Examples", "`!help [command]` for detailed information on the command.");
         }
