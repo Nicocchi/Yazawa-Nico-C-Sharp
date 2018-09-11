@@ -63,7 +63,7 @@ namespace Yazawa_Nico.Modules.Utils
             embed.AddField("Core", "`help`, `helpdm`");
             embed.AddField("Images", "`angry`, `bad`, `badass`, `bite`, `blush`, `congrats`, `cry`, `cuddle`, `evil`, `excited`, `highfive`, `hug`, `kiss`, `laugh`, `lewd`, `lick`, `niconii`, `no`, `nosebleed`, `pat`, `peek`, `poke`, `sad`, `scared`, `slap`, `sleepy`, `tantrum`, `washi`, `wasted`, `wow`, `yes`");
             embed.AddField("Currency", "`daily`, `profile`, `send`");
-            embed.AddField("Fun", "`choose`, `cucumber`, `give`, `marry`, `notice`, `rip`, `say`, `senpai` `wisdom`");
+            embed.AddField("Fun", "`choose`, `cucumber`, `divorce`, `give`, `marry`, `notice`, `rip`, `say`, `senpai` `wisdom`");
             embed.AddField("Games", "`8ball`, `rps`");
             embed.AddField("Moderation", "`ban`, `ban disable`, `ban enable`, `greetmsg disable`, `greetmsg enable`, `greetmsg setchannel`, `greetmsg settext`, `kick`, `kick disable`, `kick enable`, `leavemsg disable`, `leavemsg enable`, `leavemsg setchannel`, `leavemsg settext`, `levelmsg disable`, `levelmsg enable`, `purge`, `purgeu`, `setprefix`, `warn`, `warn disable`, `warn enable`");
             embed.AddField("Info", "`afk`, `avatar`, `botinfo`, `userinfo`, `serverinfo`");
