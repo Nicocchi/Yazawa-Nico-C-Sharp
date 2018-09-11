@@ -12,7 +12,7 @@ Yazawa Nico is a multipurpose bot with moderation, custom prefix, basic leveling
 
 ## Invite
 
-<a href="https://discordapp.com/oauth2/authorize?client_id=449664260637982720&scope=bot&permissions=268827774" class="button" type="submit" style="
+<a href="https://discordapp.com/oauth2/authorize?client_id=449664260637982720&scope=bot&permissions=268827774"><button class="button" type="submit" style="
     background-color: #ff4d9c;
     border: none;
     color: white;
@@ -23,7 +23,7 @@ Yazawa Nico is a multipurpose bot with moderation, custom prefix, basic leveling
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-">Invite Nico</a> <a href="https://discord.gg/nTgNYV" class="button" type="submit" style="
+">Invite Nico</button></a> <a href="https://discord.gg/nTgNYV"><button class="button" type="submit" style="
     background-color: #ff4d9c;
     border: none;
     color: white;
@@ -34,7 +34,7 @@ Yazawa Nico is a multipurpose bot with moderation, custom prefix, basic leveling
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-">Support Server</a> <a href="http://yazawanico.maverikstudios.com/" class="button" type="submit" style="
+">Support Server</button></a> <a href="http://yazawanico.maverikstudios.com/"><button class="button" type="submit" style="
     background-color: #ff4d9c;
     border: none;
     color: white;
@@ -45,7 +45,7 @@ Yazawa Nico is a multipurpose bot with moderation, custom prefix, basic leveling
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-">Visit Website</a>
+">Website</button></a>
 
 ## Main Features
 
