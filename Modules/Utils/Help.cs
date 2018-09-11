@@ -58,7 +58,7 @@ namespace Yazawa_Nico.Modules.Utils
                     .WithIconUrl(Context.Client.GetUser(Context.User.Id).GetAvatarUrl());
             });
             embed.AddField("Prefix", $"{prefix}", true);
-            embed.AddField("Support Server", $"[Support Server](https://discord.gg/uSaxHgr)", true);
+            embed.AddField("Support Server", $"[Support Server](https://discord.gg/hMXMpqv)", true);
             embed.AddField("Version", $"`v2.1.0`", true);
             embed.AddField("Core", "`help`, `helpdm`");
             embed.AddField("Images", "`angry`, `bad`, `badass`, `bite`, `blush`, `congrats`, `cry`, `cuddle`, `evil`, `excited`, `highfive`, `hug`, `kiss`, `laugh`, `lewd`, `lick`, `niconii`, `no`, `nosebleed`, `pat`, `peek`, `poke`, `sad`, `scared`, `slap`, `sleepy`, `tantrum`, `washi`, `wasted`, `wow`, `yes`");
