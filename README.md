@@ -32,10 +32,10 @@ Install [.NET Core SDK 2.1](https://www.microsoft.com/net/download) and then run
 ```
 dotnet publish --configuration release
 ```
-and then you can run it by in the project's release directory
+and then you can run it by in the project's release/publish directory
 
 ```
-dotnet run
+dotnet Yazawa-Nico.dll
 ```
 
 Now you can edit the config.json file and run the bot locally
