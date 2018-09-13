@@ -9,6 +9,7 @@ using Discord;
 using Discord.WebSocket;
 using Yazawa_Nico.Core.UserProfiles;
 using Yazawa_Nico.Core.GuildAccounts;
+using Yazawa_Nico.Core;
 
 namespace Yazawa_Nico.Core
 {
@@ -50,7 +51,19 @@ namespace Yazawa_Nico.Core
             return File.Exists(filePath);
         }
 
-        
+        public static void UpdateGlobals(Globals.GlobalConfig globalConfig)
+        {
+            const string globalFolder = "Resources";
+            const string globalFile = "globals.json";
+
+            string json = JsonConvert.SerializeObject(globalConfig, Formatting.Indented);
+            File.WriteAllText(globalFolder + "/" + globalFile, json);
+            Console.Write(json);
+
+            string json1 = File.ReadAllText(globalFolder + "/" + globalFile);
+            var json2 = JsonConvert.DeserializeObject<Globals.GlobalConfig>(json1);
+            Console.Write(json1);
+        }
 
     }
 }
