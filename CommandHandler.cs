@@ -30,11 +30,11 @@ namespace Yazawa_Nico
             _client.UserJoined += AnnounceUserJoined;
             _client.UserLeft += AnnounceUserLeave;
             _client.Ready += SetGame;
-            _client.Ready += DBLGet;
+            // _client.Ready += DBLGet;
 
-            Timer timer = new Timer(30 * 60 * 1000);
-            timer.Enabled = true;
-            timer.Elapsed += OnTick;
+            // Timer timer = new Timer(30 * 60 * 1000);
+            // timer.Enabled = true;
+            // timer.Elapsed += OnTick;
             //timer.Start();
             
         }
@@ -70,7 +70,7 @@ namespace Yazawa_Nico
                 ulong channelId = (guildProfile.GreetChannel); 
                 var channel = _client.GetChannel(channelId) as SocketTextChannel; /* Set the channel ID to the database's channel ID */
                 var gMsg = guildProfile.GreetMessage;
-                string greetMes = gMsg.Replace("@user", user.Username);
+                string greetMes = gMsg.Replace("@user", user.Mention);
                 await channel.SendMessageAsync($"{greetMes}"); //Welcomes the new user
             }
             

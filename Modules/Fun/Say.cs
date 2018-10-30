@@ -16,8 +16,9 @@ namespace Yazawa_Nico.Modules.Images
             int x = 0;
             var messages = await (Context.Channel as ITextChannel).GetMessagesAsync(x + 1).FlattenAsync();
             await (Context.Channel as ITextChannel).DeleteMessagesAsync(messages);
+            var replaceVars = content.Replace("@everyone", "everyone");
 
-            await ReplyAsync($"{content}");
+            await ReplyAsync($"{replaceVars}");
         }
 
     }

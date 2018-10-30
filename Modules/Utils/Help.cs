@@ -48,7 +48,7 @@ namespace Yazawa_Nico.Modules.Utils
             embed.WithAuthor(author => {
                 author
                     .WithName("Yazawa Nico's Commands")
-                    .WithUrl("https://discord.gg/uSaxHgr")
+                    .WithUrl("https://discord.gg/uWRCmkE")
                     .WithIconUrl(Context.Client.CurrentUser.GetAvatarUrl());
             });
             embed.WithFooter(footer =>
@@ -58,7 +58,7 @@ namespace Yazawa_Nico.Modules.Utils
                     .WithIconUrl(Context.Client.GetUser(Context.User.Id).GetAvatarUrl());
             });
             embed.AddField("Prefix", $"{prefix}", true);
-            embed.AddField("Support Server", $"[Support Server](https://discord.gg/hMXMpqv)", true);
+            embed.AddField("Community Server", $"[Community Server](https://discord.gg/uWRCmkE)", true);
             embed.AddField("Version", $"`v2.1.0`", true);
             embed.AddField("Core", "`help`, `helpdm`");
             embed.AddField("Images", "`angry`, `bad`, `badass`, `bite`, `blush`, `congrats`, `cry`, `cuddle`, `evil`, `excited`, `highfive`, `hug`, `kiss`, `laugh`, `lewd`, `lick`, `niconii`, `no`, `nosebleed`, `pat`, `peek`, `poke`, `sad`, `scared`, `slap`, `sleepy`, `tantrum`, `washi`, `wasted`, `wow`, `yes`");
